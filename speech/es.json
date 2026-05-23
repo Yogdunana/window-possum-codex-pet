@@ -1,0 +1,36 @@
+{
+  "schema": "window-possum-speech-pack/v1",
+  "language": "es",
+  "petId": "window-possum",
+  "displayName": "Pack de frases en español del Zarigüeya de la Ventana",
+  "description": "Un pack de frases en español para Window Possum. Diseñado para futuros hooks de voz de Codex Pet, forks o integraciones de overlay.",
+  "version": "1.0.0",
+  "author": "Yogdunana",
+  "lastUpdated": "2025-05-23",
+  "compatibility": {
+    "codexPetManifest": "El manifiesto oficial actual de Codex custom pet solo requiere assets visuales. Mantén este archivo fuera de window-possum/pet.json para que la mascota siga siendo instalable.",
+    "suggestedBubbleMaxChars": 45
+  },
+  "tone": ["superviviente de oficina", "autodeprecación de baja energía", "sarcástico pero nunca cruel", "frases cortas y contundentes"],
+  "memeContext": ["renuncia silenciosa", "todo está bien", "meme corporativo", "humor de burnout", "supervivencia de 9 a 5"],
+  "sayings": {
+    "idle": ["No estoy holgazaneando. Modo ahorro de energía.", "De pie aquí. Contemplando mis decisiones de vida.", "Mi batería social abandonó el edificio."],
+    "running": ["En ello. Más o menos. Mayormente.", "Funcionando a café y rencor.", "CPU ocupada. Zarigüeya tranquila."],
+    "waiting": ["Atascado. Esperando tu decisión existencial.", "Sin permisos, sin movimiento.", "Tienes que hacer clic en la cosa."],
+    "review": ["Este código tiene... carácter.", "He visto cosas en este PR.", "Las vibras están raras en este diff."],
+    "failed": ["No se colgó. Solo ensayo de desconexión anticipada.", "Los tests están rojos. Mi cara también.", "El fallo también es output. Por favor no grites."],
+    "waving": ["Hola. Otro día, otro standup.", "Bienvenido de vuelta. Tu escritorio te extrañó.", "Buenos días, compañero superviviente corporativo."],
+    "jumping": ["Yupi. Breve momento sin odiar el trabajo.", "Pequeña victoria. Gran sprint por delante.", "Zarigüeya feliz. Apenas visible."],
+    "running-right": ["Chequeando si la hora de salir está por aquí.", "Moviendo a la derecha. Espiritualmente ya me fui.", "En movimiento. Aura corporativa intacta."],
+    "running-left": ["Yendo a la izquierda para deshacer decisiones de vida.", "Esquivando requerimientos a las 2.", "Creo que vi oxígeno por allá."],
+    "generic": ["Estado de ánimo de hoy: manos atrás, estable.", "Baja energía encuentra a los suyos. Tú también estás aquí.", "No estoy callado. Estoy compilando la vida."],
+    "codexEvents": {
+      "thinking": ["Pensando. Reunión interna en curso.", "Dame un segundo. La zarigüeya procesa lógica."],
+      "shell": ["Terminal abierto. Vibes corporativos intensificándose.", "Ejecutando comandos. Como corro el reloj."],
+      "editing": ["Editando archivos. Movimientos suaves.", "Quitando un poco de olor corporativo de este código."],
+      "testing": ["Tests corriendo. Zarigüeya de guardia.", "Que todas las aserciones pasen con gracia."],
+      "git": ["Commiteando. Como entrego el parte de horas.", "Estado de git revisado. Por la zarigüeya."],
+      "done": ["Listo. Salud por nosotros.", "Terminado. La zarigüeya vuelve a mirar por la ventana."]
+    }
+  }
+}
