@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "window-possum-speech-pack/v1",
+  "title": "Window Possum Speech Pack",
+  "description": "Schema for Window Possum speech pack files",
+  "type": "object",
+  "required": ["schema", "language", "petId", "displayName", "description", "compatibility", "tone", "memeContext", "sayings"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "window-possum-speech-pack/v1",
+      "description": "Schema version identifier"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[A-Z]{2,4})?$",
+      "description": "IETF BCP 47 language tag (e.g., zh-CN, en, ja, ko)"
+    },
+    "petId": {
+      "type": "string",
+      "const": "window-possum",
+      "description": "Pet identifier"
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "Display name for this speech pack"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "description": "Description of this speech pack"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version (e.g., 1.0.0)"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "description": "Author name or handle"
+    },
+    "variant": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Variant identifier (e.g., spring, summer, custom)"
+    },
+    "seasonal": {
+      "type": "object",
+      "properties": {
+        "activeMonths": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "minItems": 1,
+          "description": "Months when this seasonal pack is active (1-12)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the seasonal theme"
+        }
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "Last update date (YYYY-MM-DD)"
+    },
+    "changelog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "date": { "type": "string" },
+          "changes": { "type": "string" }
+        }
+      },
+      "description": "Version history"
+    },
+    "compatibility": {
+      "type": "object",
+      "required": ["codexPetManifest", "suggestedBubbleMaxChars"],
+      "properties": {
+        "codexPetManifest": {
+          "type": "string",
+          "description": "Note about Codex Pet manifest compatibility"
+        },
+        "suggestedBubbleMaxChars": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 100,
+          "description": "Suggested maximum characters for speech bubble"
+        }
+      }
+    },
+    "tone": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "description": "Tone descriptors for this speech pack"
+    },
+    "memeContext": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "description": "Meme/context references for this speech pack"
+    },
+    "sayings": {
+      "type": "object",
+      "required": ["idle", "running", "waiting", "review", "failed", "waving", "jumping", "running-right", "running-left", "generic", "codexEvents"],
+      "additionalProperties": false,
+      "properties": {
+        "idle": { "$ref": "#/definitions/stringArray" },
+        "running": { "$ref": "#/definitions/stringArray" },
+        "waiting": { "$ref": "#/definitions/stringArray" },
+        "review": { "$ref": "#/definitions/stringArray" },
+        "failed": { "$ref": "#/definitions/stringArray" },
+        "waving": { "$ref": "#/definitions/stringArray" },
+        "jumping": { "$ref": "#/definitions/stringArray" },
+        "running-right": { "$ref": "#/definitions/stringArray" },
+        "running-left": { "$ref": "#/definitions/stringArray" },
+        "generic": { "$ref": "#/definitions/stringArray" },
+        "codexEvents": {
+          "type": "object",
+          "required": ["thinking", "shell", "editing", "testing", "git", "done"],
+          "properties": {
+            "thinking": { "$ref": "#/definitions/stringArray" },
+            "shell": { "$ref": "#/definitions/stringArray" },
+            "editing": { "$ref": "#/definitions/stringArray" },
+            "testing": { "$ref": "#/definitions/stringArray" },
+            "git": { "$ref": "#/definitions/stringArray" },
+            "done": { "$ref": "#/definitions/stringArray" },
+            "deploying": { "$ref": "#/definitions/stringArray" },
+            "debugging": { "$ref": "#/definitions/stringArray" },
+            "refactoring": { "$ref": "#/definitions/stringArray" },
+            "merge-conflict": { "$ref": "#/definitions/stringArray" },
+            "installing": { "$ref": "#/definitions/stringArray" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "stringArray": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "minItems": 3
+    }
+  }
+}
