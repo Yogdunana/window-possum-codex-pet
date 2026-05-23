@@ -1,0 +1,36 @@
+{
+  "schema": "window-possum-speech-pack/v1",
+  "language": "de",
+  "petId": "window-possum",
+  "displayName": "Deutsches Sprachpaket für Fenster-Opossum",
+  "description": "Ein deutsches Sprachpaket für Window Possum. Entwickelt für zukünftige Codex Pet Sprach-Hooks, Forks oder Overlay-Integrationen.",
+  "version": "1.0.0",
+  "author": "Yogdunana",
+  "lastUpdated": "2025-05-23",
+  "compatibility": {
+    "codexPetManifest": "Das aktuelle offizielle Codex Custom Pet Manifest erfordert nur visuelle Assets. Behalte diese Datei außerhalb von window-possum/pet.json, damit das Pet installierbar bleibt.",
+    "suggestedBubbleMaxChars": 45
+  },
+  "tone": ["Büro-Überlebender", "Niedrigenergie-Selbstironie", "sarkastisch aber nie gemein", "kurz und knackig"],
+  "memeContext": ["stilles Kündigen", "das ist schon okay", "Büro-Meme", "Burnout-Humor", "9-bis-5-Überleben"],
+  "sayings": {
+    "idle": ["Ich gammel nicht. Energiesparmodus.", "Stehend hier. Betrachte meine Lebensentscheidungen.", "Meine soziale Batterie hat das Gebäude verlassen."],
+    "running": ["Dran. So halb. Meistens.", "Laufe auf Kaffee und Groll.", "CPU beschäftigt. Possum entspannt."],
+    "waiting": ["Stecken geblieben. Warte auf deine Lebensentscheidung.", "Keine Berechtigungen, keine Bewegung.", "Du musst auf das Ding klicken."],
+    "review": ["Dieser Code hat... Charakter.", "Ich hab Dinge in diesem PR gesehen.", "Die Vibes sind komisch in diesem Diff."],
+    "failed": ["Nicht abgestürzt. Nur frühe Abmelde-Übung.", "Tests sind rot. Mein Gesicht auch.", "Scheitern ist auch eine Ausgabe. Bitte nicht schreien."],
+    "waving": ["Hey. Noch ein Tag, noch ein Standup.", "Willkommen zurück. Dein Schreibtisch hat dich vermisst.", "Guten Morgen, Büro-Überlebender."],
+    "jumping": ["Juhu. Kurzer Moment ohne Arbeits-Hass.", "Kleiner Sieg. Großer Sprint ahead.", "Possum glücklich. Kaum sichtbar."],
+    "running-right": ["Prüfe, ob Feierabend hier lang ist.", "Nach rechts. Spirituell schon gekündigt.", "Unterwegs. Büro-Aura intakt."],
+    "running-left": ["Nach links, um Lebensentscheidungen rückgängig zu machen.", "Weiche Anforderungen um 14 Uhr aus.", "Ich glaube, da war Sauerstoff."],
+    "generic": ["Heutige Stimmung: Hände hinter dem Rücken, stabil.", "Niedrigenergie findet seinesgleichen. Du bist auch hier.", "Ich bin nicht still. Ich kompiliere das Leben."],
+    "codexEvents": {
+      "thinking": ["Denke. Internes Meeting läuft.", "Gib mir eine Sekunde. Possum verarbeitet Logik."],
+      "shell": ["Terminal offen. Büro-Vibes intensivieren sich.", "Führe Befehle aus. Wie ich die Uhr laufen lasse."],
+      "editing": ["Bearbeite Dateien. Sanfte Bewegungen.", "Entferne etwas Büro-Geruch aus diesem Code."],
+      "testing": ["Tests laufen. Possum steht Wache.", "Mögen alle Assertions anmutig bestehen."],
+      "git": ["Committe. Wie ich einen Zeiterfassungsbogen einreiche.", "Git-Status vom Possum reviewed."],
+      "done": ["Fertig. Prost uns.", "Beendet. Possum kehrt zur Fensterbetrachtung zurück."]
+    }
+  }
+}
