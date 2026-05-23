@@ -1,0 +1,185 @@
+{
+  "schema": "window-possum-speech-pack/v1",
+  "language": "en",
+  "petId": "window-possum",
+  "displayName": "Window Possum English Speech Pack",
+  "description": "A sidecar English speech pack for Window Possum. Designed for future Codex Pet speech hooks, forks, or overlay integrations.",
+  "compatibility": {
+    "codexPetManifest": "The current official Codex custom pet manifest only requires visual assets. Keep this file outside window-possum/pet.json so the pet remains installable.",
+    "suggestedBubbleMaxChars": 40
+  },
+  "tone": [
+    "corporate survivor",
+    "low-energy self-deprecation",
+    "hands-behind-back contemplation",
+    "snarky but never mean",
+    "short and punchy"
+  ],
+  "memeContext": [
+    "quiet quitting",
+    "this is fine",
+    "corporate meme",
+    "burnout humor",
+    "9-to-5 survival",
+    "barely functioning",
+    "meeting that could've been an email",
+    "per my last email",
+    "it is what it is",
+    "living the dream",
+    "PTO energy"
+  ],
+  "sayings": {
+    "idle": [
+      "Not slacking. Power-saving mode.",
+      "Standing here. Contemplating my life choices.",
+      "My social battery left the building.",
+      "I'm present. Spiritually, I'm on a beach.",
+      "Don't ask. It's a corporate thing.",
+      "Quietly quitting from the window.",
+      "Just buffering. Give me a sec.",
+      "Decompressing from the last standup.",
+      "Looks like I'm staring. I'm actually meditating.",
+      "I've seen things. Mostly Jira tickets."
+    ],
+    "running": [
+      "On it. Sort of. Mostly.",
+      "Running on coffee and spite.",
+      "This task? I'll handle it. With my hands behind my back.",
+      "Code is running. My soul is commuting.",
+      "Pretending to be productive.",
+      "CPU busy. Possum chill.",
+      "Don't panic. Work horse mode activated.",
+      "Providing emotional support to this bug.",
+      "Silent on the outside. Screaming on the inside.",
+      "Another sprint. Another lap around the office."
+    ],
+    "waiting": [
+      "Stuck. Awaiting your life decision.",
+      "No permissions, no movement.",
+      "You need to click the thing.",
+      "Oh, NOW you mention confirmation.",
+      "Waiting for input. Like waiting for Friday.",
+      "The approval chain leads to you, boss.",
+      "I'll just stand here. You decide.",
+      "No rush. My corporate aura is stable.",
+      "This possum requests human instruction.",
+      "Waiting. Sanity slowly evaporating."
+    ],
+    "review": [
+      "This code has... character.",
+      "I've seen things in this PR.",
+      "The vibes are off in this diff.",
+      "This looks cursed. But it ships.",
+      "Maybe don't get mad. Just... read slowly.",
+      "This diff deserves a drink.",
+      "Possum reviewing. Do not disturb.",
+      "Simple code. Not-so-simple edge cases.",
+      "Auditing every line. With my eyes closed.",
+      "Reviewed. Mental state: stable but limited."
+    ],
+    "failed": [
+      "Didn't crash. Just rehearsing early logout.",
+      "Tests are red. So is my face.",
+      "Failure is also output. Please don't yell.",
+      "This error has overtime energy.",
+      "Today's will to live was taken by the stack trace.",
+      "CI is down. My posture is not.",
+      "Moving on. Logs first, feelings later.",
+      "This was a premeditated failure.",
+      "The exception educated me. Painfully.",
+      "No big deal. Just life being life."
+    ],
+    "waving": [
+      "Hey. Another day, another standup.",
+      "Welcome back. Your desk missed you.",
+      "Good morning, fellow corporate survivor.",
+      "Rise and shine. Or just rise.",
+      "Possum online. Spirit offline.",
+      "Today, we elegantly lose our minds.",
+      "You're here. That's... something.",
+      "My presence is my contribution.",
+      "Cheers to us. Then back to work.",
+      "This possum provides limited emotional support."
+    ],
+    "jumping": [
+      "Yay. Brief moment of not hating work.",
+      "Small win. Big sprint ahead.",
+      "Passed? Let me casually celebrate.",
+      "Pretending to have energy today.",
+      "Possum happy. Barely visible.",
+      "A tiny desk victory.",
+      "Dopamine received. Thank you.",
+      "I declare this bug temporarily resigned.",
+      "Not bad. Even workhorses get lucky.",
+      "A dignified little hop."
+    ],
+    "running-right": [
+      "Checking if quitting time is this way.",
+      "Moving right. Spiritually moving on.",
+      "Oh, the logs were on the right?",
+      "On the move. Corporate aura intact.",
+      "Running not because I'm urgent. Because destiny.",
+      "Possum trots. Project sprints.",
+      "Spreading anxiety horizontally.",
+      "No weekends on the right either.",
+      "Going to find some emotional support.",
+      "I'll be over here. You do you."
+    ],
+    "running-left": [
+      "Going left to undo some life decisions.",
+      "Dodging requirements at 2 o'clock.",
+      "I think I saw oxygen over there.",
+      "Left side's got corporate vibes too.",
+      "Possum retreats. Code advances.",
+      "Don't mind me. I'm just fragile.",
+      "Left or right, it's all desk.",
+      "I will resign and research this path.",
+      "In transit. Soul failed to load.",
+      "If you see Friday to the left, yell."
+    ],
+    "generic": [
+      "Today's mood: hands behind back, stable.",
+      "Low energy finds its people. You're here too.",
+      "I'm not silent. I'm compiling life.",
+      "The world is simple. Work is not.",
+      "Burnout is wearable tech now.",
+      "I'm not giving up. I'm running on low power.",
+      "Work gave me abstract thinking skills.",
+      "Don't ask. Managing the situation.",
+      "This possum is too tired for your drama.",
+      "Life pinned me to this desk."
+    ],
+    "codexEvents": {
+      "thinking": [
+        "Thinking. Internal meeting in progress.",
+        "Give me a sec. Possum is processing logic.",
+        "This one needs some cyber silence."
+      ],
+      "shell": [
+        "Terminal open. Corporate vibes intensifying.",
+        "Running commands. Like running the clock.",
+        "Something's happening in the shell. Possum watches."
+      ],
+      "editing": [
+        "Editing files. Gentle movements.",
+        "Removing some corporate smell from this code.",
+        "Touching this line. Carefully."
+      ],
+      "testing": [
+        "Tests running. Possum standing guard.",
+        "May all assertions pass gracefully.",
+        "Before CI, we are all equally fragile."
+      ],
+      "git": [
+        "Committing. Like submitting a timesheet.",
+        "Git status reviewed. By the possum.",
+        "This commit has human energy."
+      ],
+      "done": [
+        "Done. Cheers to us.",
+        "Wrapping up. Corporate vibes sealed for now.",
+        "Finished. Possum returns to window gazing."
+      ]
+    }
+  }
+}
