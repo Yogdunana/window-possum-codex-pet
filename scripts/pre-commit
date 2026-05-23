@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Pre-commit hook for validating speech packs
+# Copy this to .git/hooks/pre-commit or use with pre-commit framework
+
+set -euo pipefail
+
+echo "Running pre-commit checks..."
+
+# Get the directory where the hook is located
+HOOK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(dirname "$HOOK_DIR")"
+
+# Check if we're in a git repository
+if [[ ! -d "$REPO_DIR/.git" ]]; then
+    REPO_DIR="$(git rev-parse --show-toplevel)"
+fi
+
+# Run speech pack validation
+if [[ -f "$REPO_DIR/scripts/validate-speech-packs.py" ]]; then
+    echo "Validating speech packs..."
+    python3 "$REPO_DIR/scripts/validate-speech-packs.py" --strict
+    if [[ $? -ne 0 ]]; then
+        echo "❌ Speech pack validation failed. Please fix the errors above."
+        exit 1
+    fi
+fi
+
+# Check shell scripts syntax
+echo "Checking shell scripts..."
+for script in "$REPO_DIR"/*.sh "$REPO_DIR"/scripts/*.sh; do
+    if [[ -f "$script" ]]; then
+        if ! bash -n "$script" 2>/dev/null; then
+            echo "❌ Syntax error in $script"
+            exit 1
+        fi
+    fi
+done
+
+echo "✅ All pre-commit checks passed!"
+exit 0
