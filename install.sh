@@ -15,5 +15,16 @@ mkdir -p "${TARGET_ROOT}"
 rm -rf "${TARGET_DIR}"
 cp -R "${SOURCE_DIR}" "${TARGET_DIR}"
 
+# Verify installation
+if [[ ! -f "${TARGET_DIR}/pet.json" ]]; then
+  echo "Installation verification failed: pet.json not found at ${TARGET_DIR}/pet.json" >&2
+  exit 1
+fi
+
+if [[ ! -f "${TARGET_DIR}/spritesheet.webp" ]]; then
+  echo "Installation verification failed: spritesheet.webp not found at ${TARGET_DIR}/spritesheet.webp" >&2
+  exit 1
+fi
+
 echo "Installed Window Possum to ${TARGET_DIR}"
 echo "Open Codex > Settings > Appearance > Pets > Refresh local pets, then select Window Possum."
