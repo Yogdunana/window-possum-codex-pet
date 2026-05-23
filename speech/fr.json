@@ -1,0 +1,36 @@
+{
+  "schema": "window-possum-speech-pack/v1",
+  "language": "fr",
+  "petId": "window-possum",
+  "displayName": "Pack de répliques français du Possum à la fenêtre",
+  "description": "Un pack de répliques français pour Window Possum. Conçu pour les futurs hooks de parole Codex Pet, forks ou intégrations overlay.",
+  "version": "1.0.0",
+  "author": "Yogdunana",
+  "lastUpdated": "2025-05-23",
+  "compatibility": {
+    "codexPetManifest": "Le manifeste officiel actuel de Codex custom pet ne nécessite que des assets visuels. Gardez ce fichier en dehors de window-possum/pet.json pour que le pet reste installable.",
+    "suggestedBubbleMaxChars": 40
+  },
+  "tone": ["survivant du bureau", "autodérision basse énergie", "contemplation les mains derrière le dos", "sarcastique mais jamais méchant", "phrases courtes et percutantes"],
+  "memeContext": ["démission silencieuse", "ça va aller", "mème corporate", "humour burnout", "survie 9h-17h"],
+  "sayings": {
+    "idle": ["Je ne glande pas. Mode économie d'énergie.", "Debout là. Je contemple mes choix de vie.", "Ma batterie sociale a quitté le bâtiment."],
+    "running": ["J'y travaille. Enfin, plus ou moins.", "Je tourne au café et au ressentiment.", "CPU occupé. Possum calme."],
+    "waiting": ["Bloqué. J'attends ta décision existentielle.", "Pas de permissions, pas de mouvement.", "Tu dois cliquer sur le truc."],
+    "review": ["Ce code a... du caractère.", "J'en ai vu des choses dans cette PR.", "Les vibes sont bizarres dans ce diff."],
+    "failed": ["Pas planté. Juste répétition de déconnexion anticipée.", "Les tests sont rouges. Mon visage aussi.", "L'échec est aussi une sortie. Ne crie pas."],
+    "waving": ["Salut. Encore une journée, encore un standup.", "Bienvenue. Ton bureau t'a manqué.", "Bonjour, camarade survivant du corporate."],
+    "jumping": ["Youpi. Bref moment sans détester le travail.", "Petite victoire. Grand sprint à venir.", "Possum content. À peine visible."],
+    "running-right": ["Je vérifie si l'heure de partir est par là.", "Mouvement à droite. Spirituellement, j'ai déjà démissionné.", "En mouvement. Aura corporate intacte."],
+    "running-left": ["Je vais à gauche pour annuler des décisions de vie.", "Esquive des exigences à 14h.", "Je crois que j'ai vu de l'oxygène là-bas."],
+    "generic": ["Humeur du jour : mains dans le dos, stable.", "Basse énergie trouve ses semblables. T'es là aussi.", "Je suis pas silencieux. Je compile la vie."],
+    "codexEvents": {
+      "thinking": ["Réflexion. Réunion interne en cours.", "Donne-moi une seconde. Le possum traite la logique."],
+      "shell": ["Terminal ouvert. Vibes corporate qui s'intensifient.", "Exécution de commandes. Comme le décompte des heures."],
+      "editing": ["Édition de fichiers. Mouvements doux.", "J'enlève un peu d'odeur corporate de ce code."],
+      "testing": ["Tests en cours. Possum en sentinelle.", "Que toutes les assertions passent avec grâce."],
+      "git": ["Commit en préparation. Comme un rapport de temps.", "Statut git revu. Par le possum."],
+      "done": ["Terminé. Santé à nous.", "Fini. Le possum retourne à sa contemplation fenêtre."]
+    }
+  }
+}
